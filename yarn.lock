@@ -387,11 +387,12 @@
   resolved "https://registry.yarnpkg.com/@cliqz-oss/dexie/-/dexie-2.0.4.tgz#0e710504e2b9198baa9b046abd3a82731b94d56e"
   integrity sha512-HxMbBQfdy0CehThTFierXbRPI+PHDEucUUriCCzViAKbCWWQIlL6uZcyDaaPRMPWy45v78lezPB4457kfjS72g==
 
-"@cliqz/adblocker@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@cliqz/adblocker/-/adblocker-0.10.0.tgz#e46911c49dbe6b255e72a71e828eb46f7416ae11"
-  integrity sha512-+0Pl4CzzZW21FxJ1AJSi3X6H6ZaQMZHol+Za9yH32kG2LZjoduMCoXNmm8e1r5wrZs/FWsZyj3UPo7JsOrW5oA==
+"@cliqz/adblocker@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@cliqz/adblocker/-/adblocker-0.11.0.tgz#7677ec56ce9e8b6602b92c1f9a905b71d5c24084"
+  integrity sha512-eBw0+WQuzr05UjsPCptpkKfJi67+K/DB1v4u6f2AtJXQCtQjtUTyMAU1Th0MPY74VR9V9djmmU7Q/rfY0AOXGA==
   dependencies:
+    "@types/puppeteer" "^1.12.4"
     tldts "^5.0.3"
     tslib "^1.9.3"
     tsmaz "^1.2.1"
@@ -441,6 +442,13 @@
   version "11.9.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.9.6.tgz#c632bbcc780a1349673a6e2e9b9dfa8c369d3c74"
   integrity sha512-4hS2K4gwo9/aXIcoYxCtHpdgd8XUeDmo1siRCAH3RziXB65JlPqUFMtfy9VPj+og7dp3w1TFjGwYga4e0m9GwA==
+
+"@types/puppeteer@^1.12.4":
+  version "1.12.4"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-1.12.4.tgz#8388efdb0b30a54a7e7c4831ca0d709191d77ff1"
+  integrity sha512-aaGbJaJ9TuF9vZfTeoh876sBa+rYJWPwtsmHmYr28pGr42ewJnkDTq2aeSKEmS39SqUdkwLj73y/d7rBSp7mDQ==
+  dependencies:
+    "@types/node" "*"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -1257,12 +1265,54 @@ brorand@^1.0.1:
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
 
-"browser-core@https://github.com/cliqz-oss/browser-core/releases/download/7.37.3/browser-core-7.37.3.tgz":
-  version "7.37.3"
-  resolved "https://github.com/cliqz-oss/browser-core/releases/download/7.37.3/browser-core-7.37.3.tgz#b5d69d2e23b3e6c14720e2e5bb63670bdc2b4ef8"
+"browser-core@https://s3.amazonaws.com/cdncliqz/update/edge/ghostery/ghostery-search/7.37.4.575f8af.tgz":
+  version "7.37.4"
+  resolved "https://s3.amazonaws.com/cdncliqz/update/edge/ghostery/ghostery-search/7.37.4.575f8af.tgz#ab28551cd05e9392fa219b805914ad52eff07437"
   dependencies:
     "@cliqz-oss/dexie" "^2.0.4"
-    "@cliqz/adblocker" "^0.10.0"
+    "@cliqz/adblocker" "^0.11.0"
+    ajv "^6.10.0"
+    anonymous-credentials "https://github.com/cliqz-oss/anonymous-credentials/releases/download/0.1.3/anonymous-credentials-0.1.3.tgz"
+    classnames "^2.2.5"
+    cliqz-history "https://github.com/cliqz-oss/cliqz-history/releases/download/1.1.2/cliqz-history-1.1.2.tgz"
+    deep-equal "^1.0.1"
+    handlebars "^4.1.1"
+    jquery "^3.0.0"
+    jsep "^0.3.0"
+    math-expression-evaluator "^1.2.17"
+    moment "^2.22.2"
+    node-fetch "^1.7.1"
+    node-forge "git+https://git@github.com/digitalbazaar/forge.git#af3f590af9d3c809e1cb44b2bb5398a3a6b944c2"
+    node-persist "^2.0.11"
+    pako "^1.0.6"
+    prop-types "^15.5.10"
+    punycode "^2.1.1"
+    qrcodejs "^1.0.0"
+    react "16.6.3"
+    react-dom "16.6.3"
+    react-modal "3.6.1"
+    react-native-web "0.9.9"
+    react-toggle-display "^2.2.0"
+    react-tooltip "3.9.0"
+    react-touch-carousel "0.8.3"
+    rusha "^0.8.13"
+    rxjs "^6.4.0"
+    sanitize-filename "^1.6.1"
+    spanan "^2.0.0"
+    spectre.css "^0.5.7"
+    text-encoding "^0.6.4"
+    tldts "^5.0.3"
+    tooltipster "^4.2.6"
+    ua-parser-js "^0.7.12"
+    whatwg-fetch "^3.0.0"
+    ytdl-core "^0.20.2"
+
+"browser-core@https://s3.amazonaws.com/cdncliqz/update/edge/ghostery/ghostery-search/7.37.4.5bbf772.tgz":
+  version "7.37.4"
+  resolved "https://s3.amazonaws.com/cdncliqz/update/edge/ghostery/ghostery-search/7.37.4.5bbf772.tgz#b593f5fa7ff422258bb2e99df3b9301adef9366b"
+  dependencies:
+    "@cliqz-oss/dexie" "^2.0.4"
+    "@cliqz/adblocker" "^0.11.0"
     ajv "^6.10.0"
     anonymous-credentials "https://github.com/cliqz-oss/anonymous-credentials/releases/download/0.1.3/anonymous-credentials-0.1.3.tgz"
     classnames "^2.2.5"
